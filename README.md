@@ -1,11 +1,6 @@
-## Welcome to GitHub Pages
+# Welcome to Online appendix of  Crème de la crème. Investigating Metadata and Survivability of Top Android Apps 
 
-<div w3-include-HTML="rq1.html"></div>
-<script>w3.includeHTML();</script>
-
-You can use the [editor on GitHub](https://github.com/cremedelacremetop/cremedelacreme/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Mobile apps are distributed via online markets that allow developers to reach a large set of users in different geographic locations. With this online-market-based distribution model, developers have access to a high volume  of crowd-sourced requirements, comments, and ratings. In addition to crowd-sourced reviews, app markets contain valuable apps' metadata that have motivated a plethora of previous works  aimed at mining that information with different purposes. The online markets also operate as a board in which top apps are recognized in lists grouped by category and price, but also in curated lists as the editor choice list of Google Play. Despite the prolific amount of work on app store mining, to the best of our knowledge, the characteristics of the apps on those lists and other aspects such as the survivability in those top-notch lists have not been investigated. Thus in this paper we investigate metadata and survivability of apps in the tops lists of Google Play, from four different countries, and collected during 30 weeks. 
 
 ### Markdown
 
@@ -14,20 +9,17 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### RQ1  
+_What are the prevalent characteristics of top apps?_
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### RQ2  1
+_Do top apps' predominant characteristics change over time?_
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+### RQ3  1
+_What are the top-list survivability patterns exhibited by the analyzed apps?_
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
