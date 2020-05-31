@@ -3,8 +3,7 @@
 
 Mobile apps are distributed via online markets that allow developers to reach a large set of users in different geographic locations. With this online-market-based distribution model, developers have access to a high volume  of crowd-sourced requirements, comments, and ratings. In addition to crowd-sourced reviews, app markets contain valuable apps' metadata that have motivated a plethora of previous works  aimed at mining that information with different purposes. The online markets also operate as a board in which top apps are recognized in lists grouped by category and price, but also in curated lists as the editor choice list of Google Play. Despite the prolific amount of work on app store mining, to the best of our knowledge, the characteristics of the apps on those lists and other aspects such as the survivability in those top-notch lists have not been investigated. Thus in this paper we investigate metadata and survivability of apps in the tops lists of Google Play, from four different countries, and collected during 30 weeks. 
 
-
-## Reasearch questions and main highlights 
+## Research questions and main highlights 
 Here you can find the main highlights of each RQs, including some results for not imputed and imputed data.
 
 ### RQ1  
@@ -35,7 +34,7 @@ The following table presents the variables we selected in order to determine the
   </tbody>
 </table>
 
-#### Categorical variables
+#### Content Rating
 
 To begin, we analyzed Content Rating. Following figure illustrates the possible values of Content Rating for the dataset without imputations:
 
@@ -63,9 +62,9 @@ After analyzing the dataset in general, we grouped it by countries to found whet
                 };                
 </script>
 
-Content Rating, grouped by country, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_country.html)
+- Content Rating, grouped by country, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_country.html)
 
-Content Rating, grouped by country, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_country.html)
+- Content Rating, grouped by country, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_country.html)
 
 Similarly, when analyzing by tops, we analyzed if Top free, Top selling and the Editor choice had differences:
 
@@ -84,9 +83,9 @@ Similarly, when analyzing by tops, we analyzed if Top free, Top selling and the 
 </script>
 
 
-Content Rating, grouped by top, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_top.html)
+- Content Rating, grouped by top, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_top.html)
 
-Content Rating, grouped by top, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_top.html)
+- Content Rating, grouped by top, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_top.html)
 
 In conclusion, no matter if we are analyzing Top Free, Top selling of Editor choice, the predominant content rating is _Everyone_.
 
@@ -113,6 +112,8 @@ However, when grouping by country and top in the dataset with imputations, as pr
 - Content Rating, grouped by country and top, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_group.html)
 
 Editor choice in Colombia dissapeared, because it had more than 4 missing weeks. Thus, even when the behavior is the same, predominant content rating is _Everyone_, the group for Colombia and Editor choice is missing, in consequence, we cannot conclude that _Everyone_ is the predominant for all groups.
+
+#### Android Version
 
 **Main highlights:** for categorical and some numerical variables, there are no differences across countries. Despite this, regarding rating, amount of stars, number of installs and price, differences are relevant. Predominant characteristics of categorical variables remain the same even if we analyze at top-list or country level, with the exception of _Android version_ for Editor Choice. However, predominant variables of numeric variables change mostly across top lists, in particular when dealing with editor choice, despite this, they also change across countries but at a minor rate. Besides, we can conclude that numerical variables related to _length_ do not show relevant differences, but variables related to _rating_ and _amount of stars_ showed large differences in all the cases, no matter the level (top,-list country or top-list-and-country level). In addition, _price_, _number of installs_ and _days since last update_ vary when different combinations across tops and countries are made. Then, when grouping tops and countries, prevailing characteristics differ.
 
