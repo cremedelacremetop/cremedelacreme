@@ -49,6 +49,7 @@ However, we didn't find different predominant values for the dataset with imputa
 
 After analyzing the dataset in general, we grouped it by countries to found whether there were differences between Brazil, Colombia, Germany and USA. As presented in the following figure, we found predominant content rating was the suitable for all ages, but the corresponding one for each country:
 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="33e79995-a3f0-4756-8d03-2cbcf2ad3c4e" class="plotly-graph-div" style="height:100%; width:100%;"></div>
 <script type="text/javascript">
            window.PLOTLYENV=window.PLOTLYENV || {};
@@ -68,6 +69,7 @@ Content Rating, grouped by country, possible values for dataset with LOCF imputa
 
 Similarly, when analyzing by tops, we analyzed if Top free, Top selling and the Editor choice had differences:
 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="51b537f9-a62a-4aa3-9494-c23348ac90b1" class="plotly-graph-div" style="height:100%; width:100%;"></div>
 <script type="text/javascript">
            window.PLOTLYENV=window.PLOTLYENV || {};
@@ -90,6 +92,7 @@ In conclusion, no matter if we are analyzing Top Free, Top selling of Editor cho
 
 Finally, we grouped by country and top, as depicted in the following figure:
 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="33e79995-a3f0-4756-8d03-2cbcf2ad3c4e" class="plotly-graph-div" style="height:100%; width:100%;"></div>
 <script type="text/javascript">
            window.PLOTLYENV=window.PLOTLYENV || {};
