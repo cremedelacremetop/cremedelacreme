@@ -36,7 +36,7 @@ The following table presents the variables we selected in order to determine the
 
 #### Content Rating
 
-To begin, we analyzed Content Rating. Following figure illustrates the possible values of Content Rating for the dataset without imputations:
+To begin, we analyzed Content Rating. The following figures illustrate the possible values of Content Rating for the dataset without imputations, with LOCF imputation and MFO imputation:
 
 ![](/images/content_rating.png)  
 
@@ -46,7 +46,8 @@ However, we didn't find different predominant values for the dataset with imputa
 :-------------------------:|:-------------------------:
 ![](/images/content_rating_locf.png) |![](/images/content_rating_mfo.png)
 
-After analyzing the dataset in general, we grouped it by countries to found whether there were differences between Brazil, Colombia, Germany and USA. As presented in the following figure, we found predominant content rating was the suitable for all ages, but the corresponding one for each country:
+
+After analyzing the dataset in general, we grouped it by countries to found whether there were differences between Brazil, Colombia, Germany and USA. As presented in the following figure, we found _Everyone_ as the predominant content rating:
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="dd797a7f-4647-44d8-bf1d-60544ffbb04a" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -62,11 +63,14 @@ After analyzing the dataset in general, we grouped it by countries to found whet
                 };                
 </script>
 
-- Content Rating, grouped by country, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_country.html)
+Nevertheless, the predominant value for the dataset with imputations is the same:
 
 - Content Rating, grouped by country, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_country.html)
 
-Similarly, when analyzing by tops, we analyzed if Top free, Top selling and the Editor choice had differences:
+- Content Rating, grouped by country, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_country.html)
+
+
+Similarly, when analyzing by tops, we analyzed if Top free, Top selling and the Editor choice had differences. We found the predominant Android Version is _Ice Cream Sandwich and up_, followed by _Jelly Bean and up_ and, finally, _Varies with device_:
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="51b537f9-a62a-4aa3-9494-c23348ac90b1" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -82,6 +86,7 @@ Similarly, when analyzing by tops, we analyzed if Top free, Top selling and the 
                 };                
 </script>
 
+In addition, we found the same predominant android versions when using the dataset with imputations:
 
 - Content Rating, grouped by top, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_top.html)
 
@@ -105,13 +110,13 @@ Finally, we grouped by country and top, as depicted in the following figure:
                 };               
 </script>
 
-However, when grouping by country and top in the dataset with imputations, as presented here:
+We found the predominant values is still _Everyone_ for all the groups. However, this changes when using the datasets with imputations, as presented here:
 
 - Content Rating, grouped by country and top, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_group.html)
 
 - Content Rating, grouped by country and top, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_group.html)
 
-Editor choice in Colombia dissapeared, because it had more than 4 missing weeks. Thus, even when the behavior is the same, predominant content rating is _Everyone_, the group for Colombia and Editor choice is missing, in consequence, we cannot conclude that _Everyone_ is the predominant for all groups.
+Editor choice in Colombia dissapeared, because it had more than 4 missing weeks. Thus, even when the behavior is the same for the rest of the groups, the group for Colombia and Editor choice is missing, in consequence, we cannot conclude that _Everyone_ is the predominant for all groups.
 
 #### Android Version
 
