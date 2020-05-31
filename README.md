@@ -102,5 +102,15 @@ TBSE|   Top selling vs Editor's choice |True | Medium
 TBSE| Top free vs Editor's choice |True | Medium 
  
 ##### Category
+When analysing by category we found that for **_EST_** by category we dound that _Dating_ Category was the distribution that had the greatest number of non trivial differences with other categories a total of 25. For simplification we used a heatmap and we only ilustrated the first diagonal, because is redundant the other half. 
+
+
+![](/images/EST_category.png)  
+*EST distribution by category for not imputed data*
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/EST_category_LOCF.png) |![](/images/EST_category_MFO.png)
+
 
 **Main highlights:**  taking into account different survivability events can help us to understand some behaviors of the apps in the studied time. For instance, (i) Editor’s choice is the most stable and less diverse top list: it has the lowest number of apps being at the list and the highest survival times;  (ii) between the countries, the events’ distributions can differ but the effect size, in most cases, is trivial (delta<0.2); (iii) if an app returns after leaving a top list, it has a smaller time window for Editor’s choice than for the other tops to do it; (iv) analyzing these events by category show that the differences in the distribution events are, in majority, negligible
