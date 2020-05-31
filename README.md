@@ -25,7 +25,7 @@ To answer this question for each app we analyzed some survivability events to un
 #### TLO 
 A TLO indicates the number of survivability events for an app.
 
-#### Country 
+##### Country 
 _TLO(Country)_ distributions by country are all different, except USA and colombia, but all the differences were negligible. As it is possible to se in the next figures all the distributtions were similar between not imputed data and imputations
            
 ![](/images/TLO_country.png)  
@@ -39,39 +39,40 @@ _TLO(Country)_ distributions by country are all different, except USA and colomb
 
 For not imputed data and imputed data, we got these results:
 
-Imputation mode   |  Comparision | H0 rejected | Cliff's delta size
-:-----------------:|:-----------------:|:-----------------:|:-----------------:
-None |  BR vs CO |True | Negligible 
-None |  BR vs DE |True | Negligible 
-None |  BR vs US |True | Negligible 
-None |  CO vs DE |True | Negligible 
-None |  CO vs US |False|  --
-None |  DE vs US |True | Negligible 
+  Comparision | H0 rejected | Cliff's delta size
+:-----------------:|:-----------------:|:-----------------:
+  BR vs CO |True | Negligible 
+  BR vs DE |True | Negligible 
+  BR vs US |True | Negligible 
+  CO vs DE |True | Negligible 
+  CO vs US |False|  --
+  DE vs US |True | Negligible 
 
-#### Top
+##### Top
 
-_TLO(Top)_ distributions by top are all different and no difference was considerable. As it is possible to se in the next figures all the distributtions by tops were similar between not imputed data and imputations
+_TLO(Top)_ distributions by top are all different and no difference was considerable. In the next figures you can it is possible to see the TLO distribution by top and for each dataset (not imputed and imputed dataset), as we pointed out, there is no significant differences  between each image,
 
-Not imputed              |  LOCF Imputed | MFO Imputed
-:-------------------------:|:-------------------------:|:-------------------------:
-![](/images/TLO_top.png)  |  ![](/images/TLO_top_LOCF.png) |![](/images/TLO_top_MFO.png)
+![](/images/TLO_top.png)  
+*TLO distribution by top-list for not imputed data*
 
+ LOCF Imputed | MFO Imputed
+:-------------------------:|:-------------------------:
+![](/images/TLO_top_LOCF.png) |![](/images/TLO_top_MFO.png)
+
+When we compared each pair of distributions with the respective comparisons, we found that all were different. These results are presented in the next table. It is worth mention that for the imputed data and not imputed data we obtain the same results. 
 Imputation mode   |  Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:|:-----------------:
 None |  Top selling vs Top free |True | Small 
 None |  Top selling vs Editor's choice |True | Medium 
 None |  Top free vs Editor's choice |True | Small 
 
-#### EST
-A EST is the duration of each TLO event.
-#### Country 
+#### EST and  TBSE
+A EST is the duration of each TLO event, while A TBSE is the time between two consecutive TLO events. In the next subsections it is possible to see the results for each aggregations and event. In addition, we present the result for the imputed and not imputed data. 
 
-#### Top
+##### Country 
 
-#### TBSE
-A TBSE is the time between two consecutive TLO events .
-#### Country 
+##### Top
 
-#### Top
+##### Category
 
 **Main highlights:**  taking into account different survivability events can help us to understand some behaviors of the apps in the studied time. For instance, (i) Editor’s choice is the most stable and less diverse top list: it has the lowest number of apps being at the list and the highest survival times;  (ii) between the countries, the events’ distributions can differ but the effect size, in most cases, is trivial (delta<0.2); (iii) if an app returns after leaving a top list, it has a smaller time window for Editor’s choice than for the other tops to do it; (iv) analyzing these events by category show that the differences in the distribution events are, in majority, negligible
