@@ -60,11 +60,15 @@ _TLO(Top)_ distributions by top are all different and no difference was consider
 ![](/images/TLO_top_LOCF.png) |![](/images/TLO_top_MFO.png)
 
 When we compared each pair of distributions with the respective comparisons, we found that all were different. These results are presented in the next table. It is worth mention that for the imputed data and not imputed data we obtain the same results. 
+
+
   Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:
   Top selling vs Top free |True | Small 
   Top selling vs Editor's choice |True | Medium 
  Top free vs Editor's choice |True | Small 
+ 
+ 
 
 #### EST and  TBSE
 A EST is the duration of each TLO event, while A TBSE is the time between two consecutive TLO events. In the next subsections it is possible to see the results for each aggregations and event. In addition, we present the result for the imputed and not imputed data. 
