@@ -24,12 +24,38 @@ To answer this question for each app we analyzed some survivability events to un
 
 #### TLO 
 A TLO indicates the number of survivability events for an app.
+
 #### Country 
+_TLO(Country)_ distributions by country are all different, except USA and colombia, but all the differences were negligible. As it is possible to se in the next figures all the distributtions were similar between not imputed data and imputations
 
+Not imputed              |  LOCF Imputed | MFO Imputed
+:-------------------------:|:-------------------------:|:-------------------------:
+![](/images/TLO_country.png)  |  ![](/images/TLO_country_LOCF.png) |![](/images/TLO_country_MFO.png)
 
+For not imputed data abd imputed data, we got these results:
+
+Imputation mode   |  Comparision | H0 rejected | Cliff's delta size
+:-----------------:|:-----------------:|:-----------------:|:-----------------:
+None |  BR vs CO |True | Negligible 
+None |  BR vs DE |True | Negligible 
+None |  BR vs US |True | Negligible 
+None |  CO vs DE |True | Negligible 
+None |  CO vs US |False|  --
+None |  DE vs US |True | Negligible 
 
 #### Top
 
+_TLO(Top)_ distributions by top are all different and no difference was considerable. As it is possible to se in the next figures all the distributtions by tops were similar between not imputed data and imputations
+
+Not imputed              |  LOCF Imputed | MFO Imputed
+:-------------------------:|:-------------------------:|:-------------------------:
+![](/images/TLO_top.png)  |  ![](/images/TLO_top_LOCF.png) |![](/images/TLO_top_MFO.png)
+
+Imputation mode   |  Comparision | H0 rejected | Cliff's delta size
+:-----------------:|:-----------------:|:-----------------:|:-----------------:
+None |  Top selling vs Top free |True | Small 
+None |  Top selling vs Editor's choice |True | Medium 
+None |  Top free vs Editor's choice |True | Small 
 
 #### EST
 A EST is the duration of each TLO event.
