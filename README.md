@@ -115,6 +115,16 @@ Editor choice in Colombia dissapeared, because it had more than 4 missing weeks.
 
 #### Android Version
 
+Regarding Android Version, the following figures illustrate the possible values for the dataset without imputations, with LOCF imputation and MFO imputation:
+
+![](/images/android_version.png)  
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/android_version_locf.png) |![](/images/android_version_mfo.png)
+
+However, as it is possible to see, we didn't find differences in predominant android version. Thus, it doesn't matter if the dataset has imputations or not, in general, it always have _Ice Cream Sandwich and up_ as predomimant android version.
+
 **Main highlights:** for categorical and some numerical variables, there are no differences across countries. Despite this, regarding rating, amount of stars, number of installs and price, differences are relevant. Predominant characteristics of categorical variables remain the same even if we analyze at top-list or country level, with the exception of _Android version_ for Editor Choice. However, predominant variables of numeric variables change mostly across top lists, in particular when dealing with editor choice, despite this, they also change across countries but at a minor rate. Besides, we can conclude that numerical variables related to _length_ do not show relevant differences, but variables related to _rating_ and _amount of stars_ showed large differences in all the cases, no matter the level (top,-list country or top-list-and-country level). In addition, _price_, _number of installs_ and _days since last update_ vary when different combinations across tops and countries are made. Then, when grouping tops and countries, prevailing characteristics differ.
 
 ### RQ2  
