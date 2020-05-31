@@ -27,12 +27,17 @@ A TLO indicates the number of survivability events for an app.
 
 #### Country 
 _TLO(Country)_ distributions by country are all different, except USA and colombia, but all the differences were negligible. As it is possible to se in the next figures all the distributtions were similar between not imputed data and imputations
+           
+![](/images/TLO_country.png)  
 
-Not imputed              |  LOCF Imputed | MFO Imputed
-:-------------------------:|:-------------------------:|:-------------------------:
-![](/images/TLO_country.png)  |  ![](/images/TLO_country_LOCF.png) |![](/images/TLO_country_MFO.png)
+*TLO distribution for each country for not imputed data*
 
-For not imputed data abd imputed data, we got these results:
+ LOCF | MFO 
+:-------------------------:|:-------------------------:
+![](/images/TLO_country_LOCF.png) |![](/images/TLO_country_MFO.png)
+
+
+For not imputed data and imputed data, we got these results:
 
 Imputation mode   |  Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:|:-----------------:
