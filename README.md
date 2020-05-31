@@ -19,4 +19,28 @@ _Do top apps' predominant characteristics change over time?_
 
 ### RQ3  
 _What are the top-list survivability patterns exhibited by the analyzed apps?_
+
+To answer this question for each app we analyzed some survivability events to understand survivability behavior patterns in the analyzed apps for some granularities (Country, top, category). 
+
+#### TLO 
+A TLO indicates the number of survivability events for an app.
+#### Country 
+
+
+
+#### Top
+
+
+#### EST
+A EST is the duration of each TLO event.
+#### Country 
+
+#### Top
+
+#### TBSE
+A TBSE is the time between two consecutive TLO events .
+#### Country 
+
+#### Top
+
 **Main highlights:**  taking into account different survivability events can help us to understand some behaviors of the apps in the studied time. For instance, (i) Editor’s choice is the most stable and less diverse top list: it has the lowest number of apps being at the list and the highest survival times;  (ii) between the countries, the events’ distributions can differ but the effect size, in most cases, is trivial (delta<0.2); (iii) if an app returns after leaving a top list, it has a smaller time window for Editor’s choice than for the other tops to do it; (iv) analyzing these events by category show that the differences in the distribution events are, in majority, negligible
