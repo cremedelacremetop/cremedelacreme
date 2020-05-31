@@ -70,9 +70,37 @@ When we compared each pair of distributions with the respective comparisons, we 
 A EST is the duration of each TLO event, while A TBSE is the time between two consecutive TLO events. In the next subsections it is possible to see the results for each aggregations and event. In addition, we present the result for the imputed and not imputed data. 
 
 ##### Country 
+In the next figure it is possible to see EST and TBSE by country. For TSE its important to point out that some apps stayed 30 consecutive weeks in a top-list and in the opposite another apps only stayed for a single week. Conserning TBSE, some apps left the top for a single week (TBSE=1), while some apps had the opposite behavior and left a top for 28 weeks. 
+
+![](/images/country_event.png)  
+*EST and TBSE distribution by Country for not imputed data*
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/country_event_LOCF.png) |![](/images/country_event_MFO.png)
+
 
 ##### Top
+When analysing EST and TBSE events by top-list, we found that Editor's choice is a distributions that behaves way different than the other two. This behaviour was the same across the three approaches (imputed data). 
 
+![](/images/top_events.png)  
+*EST and TBSE distribution by top-list for not imputed data*
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/top_events_LOCF.png) |![](/images/top_events_MFO.png)
+
+This differences  also corroborated that these distributions were statistically significant and were not trivial, excepting _TBSE(Top selling)_ vs _TBSE(Top free)_. In fact the dissimilarities that involved Editor's choice were medium or large. 
+
+  Event | Comparision | H0 rejected | Cliff's delta size
+:-----------------:|:-----------------:|:-----------------:|:-----------------:
+TSE|  Top selling vs Top free |True | Small 
+TSE|   Top selling vs Editor's choice |True | Large 
+TSE| Top free vs Editor's choice |True | Large 
+TBSE|  Top selling vs Top free |True | Negligible 
+TBSE|   Top selling vs Editor's choice |True | Medium 
+TBSE| Top free vs Editor's choice |True | Medium 
+ 
 ##### Category
 
 **Main highlights:**  taking into account different survivability events can help us to understand some behaviors of the apps in the studied time. For instance, (i) Editor’s choice is the most stable and less diverse top list: it has the lowest number of apps being at the list and the highest survival times;  (ii) between the countries, the events’ distributions can differ but the effect size, in most cases, is trivial (delta<0.2); (iii) if an app returns after leaving a top list, it has a smaller time window for Editor’s choice than for the other tops to do it; (iv) analyzing these events by category show that the differences in the distribution events are, in majority, negligible
