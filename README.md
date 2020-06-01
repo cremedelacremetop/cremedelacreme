@@ -51,7 +51,7 @@ However, when we observed the dataset with imputations, we didn't find different
 
 ##### Country 
 
-After analyzing the dataset in general, we grouped it by countries to found whether there were differences between Brazil, Colombia, Germany and USA. As presented in the following figure, we found _Everyone_ as the predominant content rating for Colombia ans US, _USK:All Ages_ for Germany and _All Ages_ for Brazil:
+After analyzing the dataset in general, we grouped it by countries to found whether there were differences between Brazil, Colombia, Germany and USA. As presented in the following figure, we found _Everyone_ as the predominant content rating for Colombia and US, _USK:All Ages_ for Germany and _All Ages_ for Brazil:
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="dd797a7f-4647-44d8-bf1d-60544ffbb04a" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -67,15 +67,15 @@ After analyzing the dataset in general, we grouped it by countries to found whet
                 };                
 </script>
 
-Nevertheless, the predominant values for the dataset with imputations is the same:
+In addition, the predominant values for the dataset with imputations is the same:
 
-- Content Rating, grouped by country, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_country.html)
+- Content Rating, grouped by country, for dataset with LOCF imputation: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_country.html)
 
-- Content Rating, grouped by country, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_country.html)
+- Content Rating, grouped by country, for dataset with MFO imputation: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_country.html)
 
 ##### Top-lists
 
-Similarly, when analyzing by top-lists, we analyzed if Top free, Top selling and the Editor choice had differences. We found the predominant content rating is _Everyone_ for all top-lists, as depicted in the following figure:
+Similarly, when analyzing by top-lists, we analyzed if Top free, Top selling and the Editor choice had differences. However, we found the predominant content rating is _Everyone_ for all top-lists, as depicted in the following figure:
 
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -94,15 +94,15 @@ Similarly, when analyzing by top-lists, we analyzed if Top free, Top selling and
 
 In addition, we found the same predominant content rating when using the dataset with imputations:
 
-- Content Rating, grouped by top, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_top.html)
+- Content Rating, grouped by top, for dataset with MFO imputation: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_top.html)
 
-- Content Rating, grouped by top, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_top.html)
+- Content Rating, grouped by top, for dataset with LOCF imputation: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_top.html)
 
 In conclusion, no matter if we are analyzing Top Free, Top selling or Editor choice, the predominant content rating is _Everyone_.
 
 ##### Country and Top-lists
 
-Finally, we grouped by country and top-lists, as depicted in the following figure:
+Finally, we grouped by country and top-lists. As depicted in the following figure, we found the predominant value is _Everyone_ for all the pairs containing Colombia or USA, _USK: All Ages_ for all pairs with Germany and _All Ages_ for all pairs with Brazil.
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="33e79995-a3f0-4756-8d03-2cbcf2ad3c4e" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -118,13 +118,14 @@ Finally, we grouped by country and top-lists, as depicted in the following figur
                 };               
 </script>
 
-We found the predominant value is still _Everyone_ for all the groups. However, this changes when using the datasets with imputations, as presented here:
+However, when analyzing the dataset with imputations, Editor choice in Colombia was removed because it had more than 4 missing weeks, as can be observed here:
 
-- Content Rating, grouped by country and top, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_group.html)
+- Content Rating, grouped by country and top, for dataset with LOCF imputation: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_group.html)
 
-- Content Rating, grouped by country and top, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_group.html)
+- Content Rating, grouped by country and top, for dataset with MFO imputation: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_group.html)
 
-Editor choice in Colombia dissapeared, because it had more than 4 missing weeks. Thus, even when the behavior is the same for the rest of the groups, the group for Colombia and Editor choice is missing, in consequence, we cannot conclude that _Everyone_ is the predominant for all groups.
+
+In consequence, even when the behavior is the same for the rest of the groups, the group for Colombia and Editor choice is missing, in consequence, we cannot conclude that _Everyone_, _USK:All Ages_ and _All Ages_ are the predominant for all groups.
 
 #### Android Version
 
