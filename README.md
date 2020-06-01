@@ -76,7 +76,7 @@ In addition, the predominant values for the dataset with imputations is the same
 
 ##### Top-lists
 
-Similarly, when analyzing by top-lists, we analyzed if Top free, Top selling and the Editor choice had differences. However, we found the predominant content rating is _Everyone_ for all top-lists, as depicted in the following figure:
+Likewise, when analyzing by top-lists, we analyzed if Top free, Top selling and the Editor choice had differences. However, we found the predominant content rating is _Everyone_ for all top-lists, as depicted in the following figure:
 
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -93,7 +93,7 @@ Similarly, when analyzing by top-lists, we analyzed if Top free, Top selling and
                 };                
 </script>
 
-In addition, we found the same predominant content rating when using the dataset with imputations:
+Additionally, we found the same predominant content rating when using the dataset with imputations:
 
 - Content Rating, grouped by top, for dataset with MFO imputation: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_top.html)
 
@@ -306,7 +306,7 @@ The same behavior holds for datasets with imputations:
 
 ##### Country and top-lists
 
-Concerning groups of countries and top-lists, we found out that the same behavior of Editor choice remains for all the pairs containing Editor choice:
+Regarding groups of countries and top-lists, we found out that the same behavior of Editor choice remains for all the pairs containing Editor choice:
 
 ![](/images/rating_group.png)  
 
@@ -336,7 +336,7 @@ Nevertheless, when observing number of installs for the datasets with imputation
 
 ##### Top-lists
 
-Regarding top-lists, we noticed different behavior between tops, as the following figure depicts:
+For top-lists, we noticed different behavior between tops, as the following figure depicts:
 
 ![](/images/num_installs_top.png) 
 
@@ -396,7 +396,7 @@ Similarly, when using imputed data, the percentage of apps with description of c
 - What's new, grouped by 15 weeks, for dataset with MFO imputation: [What's New MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/whats_new_mfo_15_week.html)
 
 
-Thus, we analyzed at a granular level of 10 weeks to found out which weeks were different, and we noticed the last 10 weeks decreased:
+Thus, we analyzed at a 10 weeks-level to found out which weeks were different, and we noticed the last 10 weeks decreased:
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="ab1cfed2-dd76-4b11-a4d6-3b52826d80e6" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -434,7 +434,7 @@ Then, we analyzed at a level of 6 weeks and observed the last 12 weeks decreased
                 };             
 </script>
 
-Similarly, when using imputed data, the percentage of apps with description of changed for the last 12 weeks also decreased:
+Likewise, when using imputed data, the percentage of apps with description of changed for the last 12 weeks also decreased:
 
 - What's new, grouped by 6 weeks, for dataset with LOCF imputation: [What's New LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/whats_new_locf_6_week.html)
 
@@ -514,18 +514,15 @@ To answer this question for each app we analyzed some survivability events to un
 A TLO indicates the number of survivability events for an app.
 
 ##### Country 
-_TLO(Country)_ distributions by country are all different, except USA and Colombia, but all the differences were negligible. As it is possible to se in the next figures all the distributtions were similar between not imputed data and imputations
+_TLO(Country)_ distributions by country are all different, except USA and Colombia, but all the differences were negligible. As it is possible to se in the next figures all the distributtions were similar between not imputed data and imputations. The following images illustrates the _TLO_ distributions:
            
 ![](/images/TLO_country.png)  
-
-*TLO distribution for each country for not imputed data*
 
  LOCF | MFO 
 :-------------------------:|:-------------------------:
 ![](/images/TLO_country_LOCF.png) |![](/images/TLO_country_MFO.png)
 
-
-For not imputed data and imputed data, we got these results:
+The table illustrates the effect sizes and if we were able to reject the null hypotesis:
 
   Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:
@@ -549,7 +546,6 @@ _TLO(Top)_ distributions by top are all different and no difference was consider
 
 When we compared each pair of distributions with the respective comparisons, we found that all were different. These results are presented in the next table. It is worth mention that for the imputed data and not imputed data we obtain the same results. 
 
-
   Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:
   Top selling vs Top free |True | Small 
@@ -557,16 +553,12 @@ When we compared each pair of distributions with the respective comparisons, we 
  Top free vs Editor's choice |True | Small 
  
  
-
 #### EST and  TBSE
 A EST is the duration of each TLO event, while A TBSE is the time between two consecutive TLO events. In the next subsections it is possible to see the results for each aggregations and event. In addition, we present the result for the imputed and not imputed data. 
 
 ##### Country 
 In the next figure it is possible to see EST and TBSE by country. For TSE its important to point out that some apps stayed 30 consecutive weeks in a top-list and in the opposite another apps only stayed for a single week. Conserning TBSE, some apps left the top for a single week (TBSE=1), while some apps had the opposite behavior and left a top for 28 weeks. 
-
-![](/images/country_event.png)  
-*EST and TBSE distribution by Country for not imputed data*
-
+The following images illustrates the _EST and TBSE_ distributions:
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
 ![](/images/country_event_LOCF.png) |![](/images/country_event_MFO.png)
