@@ -536,7 +536,7 @@ For not imputed data and imputed data, we got these results:
   CO vs US |False|  --
   DE vs US |True | Negligible 
 
-##### Top
+##### Top-Lists
 
 _TLO(Top)_ distributions by top are all different and no difference was considerable. In the next figures you can it is possible to see the TLO distribution by top and for each dataset (not imputed and imputed dataset), as we pointed out, there is no significant differences  between each image,
 
@@ -572,7 +572,7 @@ In the next figure it is possible to see EST and TBSE by country. For TSE its im
 ![](/images/country_event_LOCF.png) |![](/images/country_event_MFO.png)
 
 
-##### Top
+##### Top-Lists
 When analysing EST and TBSE events by top-list, we found that Editor's choice is a distributions that behaves way different than the other two. This behaviour was the same across the three approaches (imputed data). 
 
 ![](/images/top_events.png)  
