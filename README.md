@@ -315,7 +315,7 @@ In addition, when using the datasets with imputations, Colombia and Editor choic
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
-![](/images/rating_locf_group.png){ height="589px" width="991px" }|![](/images/rating_mfo_group.png){ height="589px" width="991px" }
+![](/images/rating_locf_group.png)|![](/images/rating_mfo_group.png)
 
 
 **Main highlights:** for categorical and some numerical variables, there are no differences across countries. Despite this, regarding rating, amount of stars, number of installs and price, differences are relevant. Predominant characteristics of categorical variables remain the same even if we analyze at top-list or country level, with the exception of _Android version_ for Editor Choice. However, predominant variables of numeric variables change mostly across top lists, in particular when dealing with editor choice, despite this, they also change across countries but at a minor rate. Besides, we can conclude that numerical variables related to _length_ do not show relevant differences, but variables related to _rating_ and _amount of stars_ showed large differences in all the cases, no matter the level (top,-list country or top-list-and-country level). In addition, _price_, _number of installs_ and _days since last update_ vary when different combinations across tops and countries are made. Then, when grouping tops and countries, prevailing characteristics differ.
