@@ -444,6 +444,56 @@ This behavior could be related with the importance of including description of c
 
 #### Summary Length
 
+Similar to what happened with What's New, we found a change in the last 15 weeks when analyzing Summary Length, but in this case, it was an increase. This means, for the last 15 weeks the length of the summary increased:
+
+![](/images/len_summary_15_week.png)  
+
+This increase happened also in the imputed data:
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/len_summary_locf_15_week.png) |![](/images/len_summary_mfo_15_week.png)
+
+When we observed at a different granularity, 10 weeks, we found the same increase but for the last 10 weeks, for data without imputations, but also for data with them:
+
+![](/images/len_summary_10_week.png)  
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/len_summary_locf_10_week.png) |![](/images/len_summary_mfo_10_week.png)
+
+However, when we analyzed at a 6 week level, we noticed that the last 6 weeks presented a higher increase:
+
+![](/images/len_summary_6_week.png)  
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/len_summary_locf_6_week.png) |![](/images/len_summary_mfo_6_week.png)
+
+Thus, we compared the summary of apps for the first weeks with respect to the last weeks and we discovered the summary was the same as the description. That's why the summary increased its length. However, this could happen because of a change in the Google Play web page which takes the summary as a part of the description but, when clicking on it, it shows the full description, thus the summary is the description.
+
+#### Rating
+
+![](/images/rating_15_week.png)  
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/rating_locf_15_week.png) |![](/images/rating_mfo_15_week.png)
+
+
+
+![](/images/rating_10_week.png)  
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/rating_locf_10_week.png) |![](/images/rating_mfo_10_week.png)
+
+
+![](/images/rating_6_week.png)  
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/rating_locf_6_week.png) |![](/images/rating_mfo_6_week.png)
 
 **Main highlights:** after analyzing the data at different time intervals, we conclude that _content rating_, _Android version_, _name length_, _description length_ and _days since last update_ remain consistent among time. However,  _what's new_, _summary length_ and _price_ tend to evolve mostly at the final weeks of the analysis period. _Number of install_ stabilizes at the end and, lastly, _rating_ changes values constantly.
 
