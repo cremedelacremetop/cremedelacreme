@@ -5,10 +5,10 @@ Mobile apps are distributed via online markets that allow developers to reach a 
 
 ## Research questions and main highlights 
 Here you can find the main highlights of each RQs, including some results for not imputed and imputed data.
+
 Also, in this repository, you can find all notebooks used to perform this analysis: [Crème de la crème repository](https://github.com/cremedelacremetop/cremedelacreme/tree/master)
 
-### RQ1  
-_What are the prevalent characteristics of top apps?_
+### RQ1: _What are the prevalent characteristics of top apps?_
 
 The following table presents the variables we selected in order to determine their prevalent characteristics:   
   <table>
@@ -35,7 +35,7 @@ The following table presents the variables we selected in order to determine the
   </tbody>
 </table>
 
-We computed the predominant values for the general dataset, grouping by country, by top-lists and by top-lists and countries.
+We computed the predominant values for the general dataset, grouping by country, by top-lists and by top-lists and countries. Here we present some of them.
 
 #### Content Rating
 
@@ -317,20 +317,59 @@ In addition, when using the datasets with imputations, Colombia and Editor choic
 :-------------------------:|:-------------------------:
 ![](/images/rating_locf_group.png)|![](/images/rating_mfo_group.png)
 
+#### Number of installs
 
-**Main highlights:** for categorical and some numerical variables, there are no differences across countries. Despite this, regarding rating, amount of stars, number of installs and price, differences are relevant. Predominant characteristics of categorical variables remain the same even if we analyze at top-list or country level, with the exception of _Android version_ for Editor Choice. However, predominant variables of numeric variables change mostly across top lists, in particular when dealing with editor choice, despite this, they also change across countries but at a minor rate. Besides, we can conclude that numerical variables related to _length_ do not show relevant differences, but variables related to _rating_ and _amount of stars_ showed large differences in all the cases, no matter the level (top,-list country or top-list-and-country level). In addition, _price_, _number of installs_ and _days since last update_ vary when different combinations across tops and countries are made. Then, when grouping tops and countries, prevailing characteristics differ.
+##### Country
+
+The following figures present the distribution of number of installs divided by country:
+
+![](/images/num_installs_country.png) 
+
+All countries seem to have the same distribution, however, when computing the effect size, we found out that all countries have large differences between them. Which means, they have different distribution and behavior, but it cannot be seen clearly since there are apps with high number of installs.
+
+Nevertheless, when observing number of installs for the datasets with imputations, behavior was the same, with large differences between countries:
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/num_installs_locf_country.png)|![](/images/num_installs_mfo_country.png)
+
+##### Top-lists
+
+Regarding top-lists, we noticed different behavior between tops, as the following figure depicts:
+
+![](/images/num_installs_top.png) 
+
+It can be observed that the Editor choice have a higher number of installs, followed by Top free and, finally, Top selling. This means, apps beloging to the Editor choice list have more number of installs with respect to apps belonging to Top free or Top selling.
+
+Similarly, datasets with imputations present the same behavior:
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/num_installs_locf_top.png)|![](/images/num_installs_mfo_top.png)
+
+##### Country and top-lists
+
+Finally, when grouping by country and top-lists, we saw that the predominant behavior is the one from top-lists, found previously, with Editor choice with the highest value:
+
+![](/images/num_installs_group.png) 
+
+We would expect that Colombia and Brazil had similar behavior, since both countries belong to South America. However, it is also to note that Colombia and USA again have a similar behavior between them, as well as Germany and Brazil. This could be because Colombia and USA belong to the same content rating classification.
+
+On the other hand, when looking at the datasets with imputations, almost all the groups had the same behavior as the dataset without imputations, with the exception of Colombia and Editor Choice:
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/num_installs_locf_group.png)|![](/images/num_installs_mfo_group.png)
+
+**Main highlights:** For categorical and some numerical variables, there are no differences across countries. Despite this, regarding rating, amount of stars, number of installs and price, differences are relevant. Predominant characteristics of categorical variables remain the same even if we analyze at top-list or country level, with the exception of _Android version_ for Editor Choice. However, predominant variables of numeric variables change mostly across top lists, in particular when dealing with editor choice, despite this, they also change across countries but at a minor rate. Besides, we can conclude that numerical variables related to _length_ do not show relevant differences, but variables related to _rating_ and _amount of stars_ showed large differences in all the cases, no matter the level (top,-list country or top-list-and-country level). In addition, _price_, _number of installs_ and _days since last update_ vary when different combinations across tops and countries are made. Then, when grouping tops and countries, prevailing characteristics differ.
 
 
+### RQ2 _Do top apps' predominant characteristics change over time?_
 
-
-
-### RQ2  
-_Do top apps' predominant characteristics change over time?_
 
 **Main highlights:** after analyzing the data at different time intervals, we conclude that _content rating_, _Android version_, _name length_, _description length_ and _days since last update_ remain consistent among time. However,  _what's new_, _summary length_ and _price_ tend to evolve mostly at the final weeks of the analysis period. _Number of install_ stabilizes at the end and, lastly, _rating_ changes values constantly.
 
-### RQ3  
-_What are the top-list survivability patterns exhibited by the analyzed apps?_
+### RQ3  _What are the top-list survivability patterns exhibited by the analyzed apps?_
 
 To answer this question for each app we analyzed some survivability events to understand survivability behavior patterns in the analyzed apps for some granularities (Country, top, category). 
 
@@ -338,7 +377,7 @@ To answer this question for each app we analyzed some survivability events to un
 A TLO indicates the number of survivability events for an app.
 
 ##### Country 
-_TLO(Country)_ distributions by country are all different, except USA and colombia, but all the differences were negligible. As it is possible to se in the next figures all the distributtions were similar between not imputed data and imputations
+_TLO(Country)_ distributions by country are all different, except USA and Colombia, but all the differences were negligible. As it is possible to se in the next figures all the distributtions were similar between not imputed data and imputations
            
 ![](/images/TLO_country.png)  
 
