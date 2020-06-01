@@ -1,4 +1,4 @@
-# RQ3 notebooks
+## RQ3  _What are the top-list survivability patterns exhibited by the analyzed apps?_
 
 You can find here the notebooks that were used for RQ3:
 * Jupyter that was used for answering RQ3 for not imputed data (Main results) -> RQ3_not_imputed.ipynb
