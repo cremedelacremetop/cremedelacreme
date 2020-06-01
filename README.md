@@ -6,7 +6,7 @@ Mobile apps are distributed via online markets that allow developers to reach a 
 ## Research questions and main highlights 
 Here you can find the main highlights of each RQs, including some results for not imputed and imputed data.
 
-Also, in this repository, you can find all notebooks used to perform this analysis: [Crème de la crème repository](https://github.com/cremedelacremetop/cremedelacreme/tree/master)
+__Also, in this repository, you can find all notebooks used to perform this analysis: [Crème de la crème repository](https://github.com/cremedelacremetop/cremedelacreme/tree/master)__
 
 ### RQ1: _What are the prevalent characteristics of top apps?_
 
