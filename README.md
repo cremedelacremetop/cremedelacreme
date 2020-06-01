@@ -474,13 +474,17 @@ Thus, we compared the summary of apps for the first weeks with respect to the la
 
 #### Rating
 
+The following figures present the Rating at a 15 week level for imputed data and not imputed data:
+
 ![](/images/rating_15_week.png)  
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
 ![](/images/rating_locf_15_week.png) |![](/images/rating_mfo_15_week.png)
 
+In addition, we computed the effect size between the groups and obtained that there are significant (large) differences between the first group (first 15 weeks) and the second group (last 15 weeks), this means the Rating changes at a time interval of 15 weeks.
 
+To check if Rating changed at different time intervals, we computed the distribution at a 10 week level:
 
 ![](/images/rating_10_week.png)  
 
@@ -488,6 +492,9 @@ Thus, we compared the summary of apps for the first weeks with respect to the la
 :-------------------------:|:-------------------------:
 ![](/images/rating_locf_10_week.png) |![](/images/rating_mfo_10_week.png)
 
+In this case, we also found large differences between the groups. However, it is important to note that the last 10 weeks have higher ratings with respect to the first 20 weeks.
+
+Thus, we analyzed at a 6 week level, for imputed and not imputed data:
 
 ![](/images/rating_6_week.png)  
 
@@ -495,7 +502,9 @@ Thus, we compared the summary of apps for the first weeks with respect to the la
 :-------------------------:|:-------------------------:
 ![](/images/rating_locf_6_week.png) |![](/images/rating_mfo_6_week.png)
 
-**Main highlights:** after analyzing the data at different time intervals, we conclude that _content rating_, _Android version_, _name length_, _description length_ and _days since last update_ remain consistent among time. However,  _what's new_, _summary length_ and _price_ tend to evolve mostly at the final weeks of the analysis period. _Number of install_ stabilizes at the end and, lastly, _rating_ changes values constantly.
+In this case, we noted that only the last 6 weeks of the study have higher rating. This could mean that, while What's New became less important, the Rating became important for an app to be in the top charts. In consequence, we can conclue Rating evolved over time and obtained more importance across weeks.
+
+**Main highlights:** After analyzing the data at different time intervals, we conclude that _content rating_, _Android version_, _name length_, _description length_ and _days since last update_ remain consistent among time. However,  _what's new_, _summary length_ and _price_ tend to evolve mostly at the final weeks of the analysis period. _Number of install_ stabilizes at the end and, lastly, _rating_ changes values constantly.
 
 ### RQ3  _What are the top-list survivability patterns exhibited by the analyzed apps?_
 
