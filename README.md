@@ -9,7 +9,7 @@ Here you can find the main highlights of each RQs, including some results for no
 ### RQ1  
 _What are the prevalent characteristics of top apps?_
 
-The following table presents the variables we selected in order to determine their prevalent characteristics for top apps:   
+The following table presents the variables we selected in order to determine their prevalent characteristics:   
   <table>
   <thead>
     <th>Type</th>
@@ -30,24 +30,28 @@ The following table presents the variables we selected in order to determine the
     <tr><td>5 Stars</td></tr>
     <tr><td>Days since last update</td></tr>
     <tr><td>Price (USD)</td></tr>
-    <td>Number of Installs</td></tr>
+    <tr><td>Number of Installs</td></tr>
   </tbody>
 </table>
 
+We computed the predominant values for the general dataset, grouping by country, by top-lists and by top-lists and countries.
+
 #### Content Rating
 
-To begin, we analyzed Content Rating. The following figures illustrate the possible values of Content Rating for the dataset without imputations, with LOCF imputation and MFO imputation:
+The following figure illustrates the possible values of Content Rating for the dataset without imputations. We found the predominant value is _Everyone_:
 
 ![](/images/content_rating.png)  
 
-However, we didn't find different predominant values for the dataset with imputations, as presented above:
+However, when we observed the dataset with imputations, we didn't find different predominant values, as presented above:
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
 ![](/images/content_rating_locf.png) |![](/images/content_rating_mfo.png)
 
 
-After analyzing the dataset in general, we grouped it by countries to found whether there were differences between Brazil, Colombia, Germany and USA. As presented in the following figure, we found _Everyone_ as the predominant content rating:
+##### Country 
+
+After analyzing the dataset in general, we grouped it by countries to found whether there were differences between Brazil, Colombia, Germany and USA. As presented in the following figure, we found _Everyone_ as the predominant content rating for Colombia ans US, _USK:All Ages_ for Germany and _All Ages_ for Brazil:
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="dd797a7f-4647-44d8-bf1d-60544ffbb04a" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -63,14 +67,16 @@ After analyzing the dataset in general, we grouped it by countries to found whet
                 };                
 </script>
 
-Nevertheless, the predominant value for the dataset with imputations is the same:
+Nevertheless, the predominant values for the dataset with imputations is the same:
 
 - Content Rating, grouped by country, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_country.html)
 
 - Content Rating, grouped by country, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_country.html)
 
+##### Top-lists
 
-Similarly, when analyzing by tops, we analyzed if Top free, Top selling and the Editor choice had differences. We found the predominant Android Version is _Ice Cream Sandwich and up_, followed by _Jelly Bean and up_ and, finally, _Varies with device_:
+Similarly, when analyzing by top-lists, we analyzed if Top free, Top selling and the Editor choice had differences. We found the predominant content rating is _Everyone_ for all top-lists, as depicted in the following figure:
+
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="51b537f9-a62a-4aa3-9494-c23348ac90b1" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -86,15 +92,17 @@ Similarly, when analyzing by tops, we analyzed if Top free, Top selling and the 
                 };                
 </script>
 
-In addition, we found the same predominant android versions when using the dataset with imputations:
+In addition, we found the same predominant content rating when using the dataset with imputations:
 
 - Content Rating, grouped by top, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_top.html)
 
 - Content Rating, grouped by top, possible values for dataset with LOCF imputation can be found here: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_top.html)
 
-In conclusion, no matter if we are analyzing Top Free, Top selling of Editor choice, the predominant content rating is _Everyone_.
+In conclusion, no matter if we are analyzing Top Free, Top selling or Editor choice, the predominant content rating is _Everyone_.
 
-Finally, we grouped by country and top, as depicted in the following figure:
+##### Country and Top-lists
+
+Finally, we grouped by country and top-lists, as depicted in the following figure:
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <div id="33e79995-a3f0-4756-8d03-2cbcf2ad3c4e" class="plotly-graph-div" style="height:100%; width:100%;"></div>
@@ -110,7 +118,7 @@ Finally, we grouped by country and top, as depicted in the following figure:
                 };               
 </script>
 
-We found the predominant values is still _Everyone_ for all the groups. However, this changes when using the datasets with imputations, as presented here:
+We found the predominant value is still _Everyone_ for all the groups. However, this changes when using the datasets with imputations, as presented here:
 
 - Content Rating, grouped by country and top, possible values for dataset with MFO imputation can be found here: [Content Rating MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_content_rating_group.html)
 
@@ -127,6 +135,9 @@ Regarding Android Version, the following figures illustrate the possible values 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
 ![](/images/android_version_locf.png) |![](/images/android_version_mfo.png)
+
+
+Android Version is _Ice Cream Sandwich and up_, followed by _Jelly Bean and up_ and, finally, _Varies with device_:
 
 However, as it is possible to see, we didn't find differences in predominant android version. Thus, it doesn't matter if the dataset has imputations or not, in general, it always have _Ice Cream Sandwich and up_ as predomimant android version.
 
