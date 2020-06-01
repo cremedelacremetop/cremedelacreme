@@ -274,12 +274,55 @@ Likewise, when using the datasets with imputations, we found the same order of p
 
 ##### Country and Top-lists
 
-Finally, we compared pairs of country and tops lists and found out that, again, all pairs containing Editor choice had higher percentages, but the order of the countries changed. However, for Colombia and Editor choice was removed, in consequence we cannot determine which group has the highest value.
+Finally, we compared pairs of country and tops lists and found out that, again, all pairs containing Editor choice had higher percentages, but the order of the countries changed. However, Colombia and Editor choice was removed, in consequence, we cannot determine which group has the highest value.
 
 Regarding pairs with Top free, the order of the countries remained. But, for pairs with Top selling, US had the highest percentage, followed by Colombia, then Brazil and finally, Germany.
 
+#### Rating
+
+##### Country
+When analyzing the distribution of rating for countries and computing the effect size, we found out all have large effect size, which means, between countries there are significant differences. The following figure illustrates the distribution of rating grouped by countries:
+
+![](/images/rating.png)  
+
+In addition, when we observed the dataset with imputations, we found out that they also have significant differences between countries:
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/rating_locf.png) |![](/images/rating_mfo.png)
+
+##### Top-lists
+
+Concerning groups of top-lists, we found out that the Editor choice only have apps with more than 4.0:
+
+![](/images/rating_top.png)  
+
+The same behavior holds for datasets with imputations:
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/rating_locf_top.png) |![](/images/rating_mfo_top.png)
+
+##### Country and top-lists
+
+Concerning groups of countries and top-lists, we found out that the same behavior of Editor choice remains for all the pairs containing Editor choice:
+
+![](/images/rating_group.png)  
+
+It is interesting to highlight that Colombia and USA have similar distributions, while Brazil and Germany are different from Colombia and USA, but similar between them.
+
+In addition, when using the datasets with imputations, Colombia and Editor choice is removed, but the same behavior of countries and top-lists holds:
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+![](/images/rating_locf_group.png){ height="589px" width="991px" }|![](/images/rating_mfo_group.png){ height="589px" width="991px" }
+
 
 **Main highlights:** for categorical and some numerical variables, there are no differences across countries. Despite this, regarding rating, amount of stars, number of installs and price, differences are relevant. Predominant characteristics of categorical variables remain the same even if we analyze at top-list or country level, with the exception of _Android version_ for Editor Choice. However, predominant variables of numeric variables change mostly across top lists, in particular when dealing with editor choice, despite this, they also change across countries but at a minor rate. Besides, we can conclude that numerical variables related to _length_ do not show relevant differences, but variables related to _rating_ and _amount of stars_ showed large differences in all the cases, no matter the level (top,-list country or top-list-and-country level). In addition, _price_, _number of installs_ and _days since last update_ vary when different combinations across tops and countries are made. Then, when grouping tops and countries, prevailing characteristics differ.
+
+
+
+
 
 ### RQ2  
 _Do top apps' predominant characteristics change over time?_
