@@ -4,7 +4,7 @@
 In this repository you will find all the notebooks used to perform the analysis. 
 
 Each folder has 3 files:
-- One for the dataset without imputations
+- One for the dataset without imputations.
 - One for the dataset with LOCF imputation
 - One for the dataset with MFO imputation
 
