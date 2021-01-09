@@ -535,14 +535,17 @@ The table illustrates the effect sizes and if we were able to reject the null hy
 
 ##### Top-Lists
 
-_TLO(Top)_ distributions by top are all different and no difference was considerable. In the next figures you can it is possible to see the TLO distribution by top and for each dataset (not imputed and imputed dataset), as we pointed out, there is no significant differences  between each image,
+_TLO(Top)_ distributions by top are all different and no difference was considerable. In the next figures you can it is possible to see the TLO distribution by top and for each dataset (not imputed and imputed dataset), as we pointed out, for the imputed data we took the two approaches already mentioned.
 
 ![](/images/TLO_top.png)  
 *TLO distribution by top-list for not imputed data*
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
-![](/images/TLO_top_LOCF.png) |![](/images/TLO_top_MFO.png)
+Deleting CO records for the three  tops  | Deleting CO records for the three  tops  
+![](/images/TLO_top_LOCF_NCO.png) |![](/images/TLO_top_MFO.png)
+Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling only
+![](/images/TLO_top_LOCF_NEdit.png) |![](/images/TLO_top_MFO.png)
 
 When we compared each pair of distributions with the respective comparisons, we found that all were different. These results are presented in the next table. It is worth mention that for the imputed data and not imputed data we obtain the same results. 
 
