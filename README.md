@@ -547,7 +547,7 @@ Deleting CO records for the three  tops  | Deleting CO records for the three  to
 Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling only
 ![](/images/TLO_top_LOCF_NEdit.png) |![](/images/TLO_top_MOF_NEdit.png)
 
-When we compared each pair of distributions with the respective comparisons, we found that all were different. These results are presented in the next table. It is worth mention that for the imputed data and not imputed data we obtain the same results. 
+When we compared each pair of distributions with the respective comparisons, we found that all were different. These results are presented in the next table.
 
   Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:
@@ -555,7 +555,21 @@ When we compared each pair of distributions with the respective comparisons, we 
   Top selling vs Editor's choice |True | Medium 
  Top free vs Editor's choice |True | Small 
  
+ The following table presents the results obtained in both imputed datasets (LOCF and MOF) deleting al the CO registers for the three tops.
  
+   Comparision | H0 rejected | Cliff's delta size
+:-----------------:|:-----------------:|:-----------------:
+  Top selling vs Top free |True | Small 
+  Top selling vs Editor's choice |True | Large 
+ Top free vs Editor's choice |True | Small 
+ 
+  The following table presents the results obtained in both imputed datasets (LOCF and MOF) deleting al the Edtors' choice registers for the three tops.
+ 
+   Comparision | H0 rejected | Cliff's delta size
+:-----------------:|:-----------------:|:-----------------:
+  Top selling vs Top free |True | Small 
+ 
+
 #### EST and  TBSE
 A EST is the duration of each TLO event, while A TBSE is the time between two consecutive TLO events. In the next subsections it is possible to see the results for each aggregations and event. In addition, we present the result for the imputed and not imputed data. 
 
