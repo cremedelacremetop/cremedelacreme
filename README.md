@@ -543,9 +543,9 @@ _TLO(Top)_ distributions by top are all different and no difference was consider
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
 Deleting CO records for the three  tops  | Deleting CO records for the three  tops  
-![](/images/TLO_top_LOCF_NCO.png) |![](/images/TLO_top_MFO.png)
+![](/images/TLO_top_LOCF_NCO.png) |![](/images/TLO_top_MOF_NCO.png)
 Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling only
-![](/images/TLO_top_LOCF_NEdit.png) |![](/images/TLO_top_MFO.png)
+![](/images/TLO_top_LOCF_NEdit.png) |![](/images/TLO_top_MOF_NEdit.png)
 
 When we compared each pair of distributions with the respective comparisons, we found that all were different. These results are presented in the next table. It is worth mention that for the imputed data and not imputed data we obtain the same results. 
 
