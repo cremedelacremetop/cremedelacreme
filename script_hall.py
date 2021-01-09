@@ -1,11 +1,15 @@
 import pymongo
 import datetime
+import numpy as np
+import pandas as pd
 
 client = pymongo.MongoClient('mongodb://localhost:27017/')
-db = client['mining']
-coll = db['app']
+db = client['HallApps'] # Name of the database where you upload the data
+coll = db['app'] # Main collection with app information
 
-query = {}
+query = {} # with this query you query all the elements of the collection
+
+verbose = True # if verbose is True then you will know the progress of the script
 
 cursor = coll.find(query)
 counter = 0
@@ -109,7 +113,7 @@ try:
         if category:
             clean_category = category.replace('_topFree', '').replace('_topSelling', '')
 
-        if genre:
+        if genre and isinstance(genre, list):
             unified_genre = '_and_'.join(genre).lower().replace(' ','')
 
         if retrieved_date_end and last_update:
@@ -206,10 +210,11 @@ try:
         else:
             has_whats_new = False
 
-        if dev_address:
+        if dev_address and not pd.isna(dev_address) and not pd.isnull(dev_address):
             clean_dev_address = dev_address.replace('<div class="content physical-address">','').replace('</div>', '')
 
-        print('---------------')
+        if verbose:
+            print('---------------')
 
         newvalues = { 
             '$set': { 
@@ -226,7 +231,11 @@ try:
             }
         coll.update_one({'_id': id_mongo}, newvalues)
         counter = counter + 1
-        print(counter)
+
+        if verbose:
+            print(counter)
+except Exception as e:
+    print(e)
 
 finally:
     client.close()
