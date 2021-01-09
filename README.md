@@ -540,29 +540,37 @@ _TLO(Top)_ distributions by top are all different and no difference was consider
 ![](/images/TLO_top.png)  
 *TLO distribution by top-list for not imputed data*
 
- LOCF  | MFO 
-:-------------------------:|:-------------------------:
-Deleting CO records for the three  tops  | Deleting CO records for the three  tops  
-![](/images/TLO_top_LOCF_NCO.png) |![](/images/TLO_top_MOF_NCO.png)
-Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling only
-![](/images/TLO_top_LOCF_NEdit.png) |![](/images/TLO_top_MOF_NEdit.png)
-
-When we compared each pair of distributions with the respective comparisons, we found that all were different. These results are presented in the next table.
+When we compared each pair of distributions we found that all were different. These results are presented in the next table.
 
   Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:
   Top selling vs Top free |True | Small 
   Top selling vs Editor's choice |True | Medium 
- Top free vs Editor's choice |True | Small 
+ Top free vs Editors' choice |True | Small 
  
- The following table presents the results obtained in both imputed datasets (LOCF and MOF) deleting al the CO registers for the three tops.
+ In the following tables and  images, in this section, we present the analysis  for the imputed datasets.
+ 
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+Deleting CO records for the three  tops  | Deleting CO records for the three  tops  
+![](/images/TLO_top_LOCF_NCO.png) |![](/images/TLO_top_MOF_NCO.png)
+
+
+ The following table presents the results obtained in both imputed datasets (LOCF and MOF) deleting al the CO registers for the three tops. Between each pairs of tops a difference was found, however only the difference between Top selling and Editors' choice was Large the other two were small.
  
    Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:
   Top selling vs Top free |True | Small 
-  Top selling vs Editor's choice |True | Large 
- Top free vs Editor's choice |True | Small 
+  Top selling vs Editors' choice |True | Large 
+ Top free vs Editors' choice |True | Small 
  
+As you can see when we removed resgister related to Colombia the difference found between Top selling vs Editors' choice change from Medium to Larg,  the other differences between remained the same. 
+  
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling only
+![](/images/TLO_top_LOCF_NEdit.png) |![](/images/TLO_top_MOF_NEdit.png)
+
   The following table presents the results obtained in both imputed datasets (LOCF and MOF) deleting al the Edtors' choice registers for the three tops.
  
    Comparision | H0 rejected | Cliff's delta size
