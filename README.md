@@ -616,14 +616,10 @@ Regarding the imputed datasets, in the following tables and images of this secti
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
 Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling only
-![](/images/top_events_LOCF.png) |![](/images/top_events_MFO.png)
-
-
-
- LOCF  | MFO 
+![](/images/events_top_LCOF_NEdit.png) |![](/images/events_top_MFO_NEdit.png)
 :-------------------------:|:-------------------------:
 Deleting CO records for the three  tops  | Deleting CO records for the three  tops  
-![](/images/TLO_top_LOCF_NCO.png) |![](/images/TLO_top_MOF_NCO.png)
+![](/images/events_top_LOCF_NCO.png) |![](/images/events_top_MFO_NCO.png)
 
 
  
