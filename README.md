@@ -535,7 +535,7 @@ The table illustrates the effect sizes and if we were able to reject the null hy
 
 ##### Top-Lists
 
-_TLO(Top)_ distributions by top are all different and no difference was considerable. In the next figures you can it is possible to see the TLO distribution by top and for each dataset (not imputed and imputed dataset), as we pointed out, for the imputed data we took the two approaches already mentioned.
+_TLO(Top)_ distributions by top are all different and no difference was considerable. In the next figures it is possible to see the TLO distribution by top and for each dataset (not imputed and imputed dataset), as we pointed out, for the imputed data we took the two approaches already mentioned.
 
 ![](/images/TLO_top.png)  
 *TLO distribution by top-list for not imputed data*
@@ -556,7 +556,7 @@ Deleting CO records for the three  tops  | Deleting CO records for the three  to
 ![](/images/TLO_top_LOCF_NCO.png) |![](/images/TLO_top_MOF_NCO.png)
 
 
- The following table presents the results obtained in both imputed datasets (LOCF and MOF) deleting al the CO registers for the three tops. Between each pairs of tops a difference was found, however only the difference between Top selling and Editors' choice was Large the other two were small.
+ The next table presents the results obtained in both imputed datasets (LOCF and MOF) deleting al the CO registers for the three tops. Between each pairs of tops a difference was found, however only the difference between Top selling and Editors' choice was Large the other two were small, also be aware that the outliers with value 3 in Editors' choice  were removed when deleting CO registers.
  
    Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:
@@ -579,7 +579,7 @@ Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling on
  
 
 #### EST and  TBSE
-A EST refers to the duration of each TLO event, while A TBSE is the time between two consecutive TLO events. In the next subsections it is possible to see the results for each aggregations and event (ie., EST and TBSE). In addition, we present the result for the imputed and not imputed data. 
+A EST refers to the duration of each TLO event, while A TBSE is the time between two consecutive TLO events. In the subsequent subsections it is possible to see the results for each aggregations and event (ie., EST and TBSE). In addition, we present the result for the imputed and not imputed data. 
 
 ##### Country 
 In the next figure it is possible to see EST and TBSE by country for not imputed data. 
@@ -600,22 +600,25 @@ When analysing EST and TBSE events by top-list, we found that Editors' choice is
 ![](/images/top_events.png)  
 *EST and TBSE distribution by top-list for not imputed data by country*
 
- LOCF  | MFO 
-:-------------------------:|:-------------------------:
-![](/images/top_events_LOCF.png) |![](/images/top_events_MFO.png)
-
-This differences  also corroborated that these distributions were statistically significant and were not trivial, excepting _TBSE(Top selling)_ vs _TBSE(Top free)_. In fact the dissimilarities that involved Editor's choice were medium or large. 
+After comparing pairwaise the distributions, we corroborated that these differnces  were statistically significant and were not trivial, excepting _TBSE(Top selling)_ vs _TBSE(Top free)_. In fact the dissimilarities that involved Editors' choice were medium or large. 
 
   Event | Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:|:-----------------:
 TSE|  Top selling vs Top free |True | Small 
-TSE|   Top selling vs Editor's choice |True | Large 
-TSE| Top free vs Editor's choice |True | Large 
+TSE|   Top selling vs  Editors' choice |True | Large 
+TSE| Top free vs  Editors' choice |True | Large 
 TBSE|  Top selling vs Top free |True | Negligible 
-TBSE|   Top selling vs Editor's choice |True | Medium 
-TBSE| Top free vs Editor's choice |True | Medium 
+TBSE|   Top selling vs  Editors' choice |True | Medium 
+TBSE| Top free vs  Editors' choice |True | Medium 
 
-Regarding the imputed datasets, in the following tables and images of this section we present the aftermentioned analysis in each datasets by thw two approached already mentioned ( deleting all registers form CO and deleting Editors' choice).
+Regarding the imputed datasets, in the following tables and images of this section we present the aformentioned analysis in each datasets by the two approached already mentioned (deleting all registers form CO and deleting Editors' choice).
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling only
+![](/images/top_events_LOCF.png) |![](/images/top_events_MFO.png)
+
+
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
