@@ -604,9 +604,9 @@ After comparing pairwaise the distributions, we corroborated that these differnc
 
   Event | Comparision | H0 rejected | Cliff's delta size
 :-----------------:|:-----------------:|:-----------------:|:-----------------:
-TSE|  Top selling vs Top free |True | Small 
-TSE|   Top selling vs  Editors' choice |True | Large 
-TSE| Top free vs  Editors' choice |True | Large 
+EST|  Top selling vs Top free |True | Small 
+EST|   Top selling vs  Editors' choice |True | Large 
+EST| Top free vs  Editors' choice |True | Large 
 TBSE|  Top selling vs Top free |True | Negligible 
 TBSE|   Top selling vs  Editors' choice |True | Medium 
 TBSE| Top free vs  Editors' choice |True | Medium 
@@ -617,11 +617,10 @@ Regarding the imputed datasets, in the following tables and images of this secti
 :-------------------------:|:-------------------------:
 Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling only
 ![](/images/events_top_LCOF_NEdit.png) |![](/images/events_top_MFO_NEdit.png)
-:-------------------------:|:-------------------------:
 Deleting CO records for the three  tops  | Deleting CO records for the three  tops  
 ![](/images/events_top_LOCF_NCO.png) |![](/images/events_top_MFO_NCO.png)
 
-
+As you may notice in the  Editors' choice EST distribution when we removed CO registers the minium values changes from 5 to 13 and for TBSE the maximum value, outliers with the value of 5 were removed. Regarding the difference of sizes between distributions we found that the difference between pairs in EST distributions stayed the same, on the other side the differences in  TBSE distrbutions between Editors' choie and the other tops increase from medium to Large.
  
 ##### Category
 When analysing by category we found that for **_EST_** distribution for _Dating_ Category was the distribution that had the greatest number of non trivial differences with other categories a total of 25. For simplification we used a heatmap and we only ilustrated the first diagonal, because is redundant the other half. 
