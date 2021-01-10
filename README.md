@@ -579,21 +579,26 @@ Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling on
  
 
 #### EST and  TBSE
-A EST is the duration of each TLO event, while A TBSE is the time between two consecutive TLO events. In the next subsections it is possible to see the results for each aggregations and event. In addition, we present the result for the imputed and not imputed data. 
+A EST refers to the duration of each TLO event, while A TBSE is the time between two consecutive TLO events. In the next subsections it is possible to see the results for each aggregations and event (ie., EST and TBSE). In addition, we present the result for the imputed and not imputed data. 
 
 ##### Country 
-In the next figure it is possible to see EST and TBSE by country. For TSE its important to point out that some apps stayed 30 consecutive weeks in a top-list and in the opposite another apps only stayed for a single week. Conserning TBSE, some apps left the top for a single week (TBSE=1), while some apps had the opposite behavior and left a top for 28 weeks. 
+In the next figure it is possible to see EST and TBSE by country for not imputed data. 
+![](/images/country_event.png)  
+
+For EST its important to point out that some apps stayed 30 consecutive weeks in a top-list and in the opposite another apps only stayed for a single week. Conserning TBSE, some apps left the top for a single week (TBSE=1), while some apps had the opposite behavior and left a top for 28 weeks. 
 The following images illustrates the _EST and TBSE_ distributions:
+
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
 ![](/images/country_event_LOCF.png) |![](/images/country_event_MFO.png)
 
+Regarding the differences we did found a diffeence between each pair od distribution, hoever all of them where negligibe. These results are the same for not imputed and imputed data.
 
 ##### Top-Lists
-When analysing EST and TBSE events by top-list, we found that Editor's choice is a distributions that behaves way different than the other two. This behaviour was the same across the three approaches (imputed data). 
+When analysing EST and TBSE events by top-list, we found that Editors' choice is a distribution that behaves way different than the other two. This behaviour was the same across the three approaches (imputed data). 
 
 ![](/images/top_events.png)  
-*EST and TBSE distribution by top-list for not imputed data*
+*EST and TBSE distribution by top-list for not imputed data by country*
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
@@ -609,9 +614,18 @@ TSE| Top free vs Editor's choice |True | Large
 TBSE|  Top selling vs Top free |True | Negligible 
 TBSE|   Top selling vs Editor's choice |True | Medium 
 TBSE| Top free vs Editor's choice |True | Medium 
+
+Regarding the imputed datasets, in the following tables and images of this section we present the aftermentioned analysis in each datasets by thw two approached already mentioned ( deleting all registers form CO and deleting Editors' choice).
+
+ LOCF  | MFO 
+:-------------------------:|:-------------------------:
+Deleting CO records for the three  tops  | Deleting CO records for the three  tops  
+![](/images/TLO_top_LOCF_NCO.png) |![](/images/TLO_top_MOF_NCO.png)
+
+
  
 ##### Category
-When analysing by category we found that for **_EST_** by category we dound that _Dating_ Category was the distribution that had the greatest number of non trivial differences with other categories a total of 25. For simplification we used a heatmap and we only ilustrated the first diagonal, because is redundant the other half. 
+When analysing by category we found that for **_EST_** distribution for _Dating_ Category was the distribution that had the greatest number of non trivial differences with other categories a total of 25. For simplification we used a heatmap and we only ilustrated the first diagonal, because is redundant the other half. 
 
 
 ![](/images/EST_category.png)  
