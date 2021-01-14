@@ -344,9 +344,9 @@ The same behavior holds for datasets with imputations, however, results differ f
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
 Deleting CO records for the three  tops  | Deleting CO records for the three  tops  
-![](/images/rating_locf_top_co.png) |![](/images/rating_mfo_top_co.png)
+![](/images/rating_locf_top_co.png =971×587) |![](/images/rating_mfo_top_co.png  =971×587)
 Analyzing Top free and Top Selling only  | Analyzing Top free and Top Selling only
-![](/images/rating_locf_top_ec.png) |![](/images/rating_mfo_top_ec.png)
+![](/images/rating_locf_top_ec.png  =971×587) |![](/images/rating_mfo_top_ec.png  =971×587)
 
 ##### Country and top-lists
 
