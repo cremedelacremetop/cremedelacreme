@@ -95,7 +95,7 @@ Likewise, when analyzing by top-lists, we analyzed if Top free, Top selling and 
 
 Additionally, we found the same predominant content rating when using the dataset with imputations:
 
-(*) Note: It's important to note that, for the datasets with imputations, we had to remove the information related with Colombia and Editors' Choice for the analysis related with top-lists. We had to remove that data because the data is missing for more than three weeks.
+*Note: It's important to note that, for the datasets with imputations, we had to remove the information related with Colombia and Editors' Choice for the analysis related with top-lists. We had to remove that data because the data is missing for more than three weeks.*
 
 - Content Rating, grouped by top, for dataset with LOCF imputation, without Colombia: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_top_co.html)
 
@@ -128,7 +128,9 @@ Finally, we grouped by country and top-lists. As depicted in the following figur
                 };               
 </script>
 
-However, when analyzing the dataset with imputations, Editor choice in Colombia was removed because it had more than 4 missing weeks, as can be observed here:
+However, when analyzing the dataset with imputations as can be observed here:
+
+*Note: It's important to note that, for the datasets with imputations, we had to remove the information related with Colombia and Editors' Choice for the analysis related with top-lists. We had to remove that data because the data is missing for more than three weeks.*
 
 - Content Rating, grouped by country and top, for dataset with LOCF imputation, without Colombia: [Content Rating LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_content_rating_group_co.html)
 
@@ -201,6 +203,8 @@ Android Version holds the same behavior, as the general dataset, for Top free an
 
 In the same way, datasets with imputations keep the same prevalent android version for Top free and Top selling, and _Varies with device_ for Editor choice:
 
+*Note: It's important to note that, for the datasets with imputations, we had to remove the information related with Colombia and Editors' Choice for the analysis related with top-lists. We had to remove that data because the data is missing for more than three weeks.*
+
  - Android Version, grouped by top, for dataset with LOCF imputation, without Colombia: [Android Version LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_android_version_top_co.html)
  
 - Android Version, grouped by top, for dataset with LOCF imputation, without Editors' Choice: [Android Version LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_android_version_top_ec.html)
@@ -230,7 +234,9 @@ When grouping by top-lists and country, we found they hold the behavior of top-l
                 
 </script>
  
-In addition, when we used the datasets with imputations, we found the same problem as described in Content Rating, Editor choice in Colombia was removed, then it is not possible to concluce that all groups with Editor choice have _Varies with device_ as predominant variable. However, for all the groups with the rest of top lists, we can conclude that the predominant version is the same.
+In addition, when we used the datasets with imputations, we found the same problem as described in Content Rating, Editor choice and Colombia were removed, then it is not possible to concluce that all groups with Editor choice have _Varies with device_ as predominant variable. However, for all the groups with the rest of top lists, we can conclude that the predominant version is the same.
+
+*Note: It's important to note that, for the datasets with imputations, we had to remove the information related with Colombia and Editors' Choice for the analysis related with top-lists. We had to remove that data because the data is missing for more than three weeks.*
 
   - Android Version, grouped by top and country, for dataset with LOCF imputation, without Colombia: [Android Version LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_android_version_group_co.html)
   
@@ -296,6 +302,8 @@ We grouped by top-list and noticed that Editor choice has a higher percentage of
 
 Likewise, when using the datasets with imputations, we found the same order of percentages, being Editor choice the highest followed by Top selling and finally Top free:
 
+*Note: It's important to note that, for the datasets with imputations, we had to remove the information related with Colombia and Editors' Choice for the analysis related with top-lists. We had to remove that data because the data is missing for more than three weeks.*
+
 - What's new, grouped by country, for dataset with LOCF imputation, without Colombia: [What's New LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_whats_new_top_co.html)
 
 - What's new, grouped by country, for dataset with LOCF imputation, without Editors' Choice: [What's New LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_whats_new_top_ec.html)
@@ -331,7 +339,7 @@ Concerning groups of top-lists, we found out that the Editor choice only have ap
 
 ![](/images/rating_top.png)  
 
-The same behavior holds for datasets with imputations:
+The same behavior holds for datasets with imputations, however, results differ for some imputations because Editor choice was removed:
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
@@ -348,12 +356,7 @@ Regarding groups of countries and top-lists, we found out that the same behavior
 
 It is interesting to highlight that Colombia and USA have similar distributions, while Brazil and Germany are different from Colombia and USA, but similar between them.
 
-In addition, when using the datasets with imputations, Colombia and Editor choice is removed, but the same behavior of countries and top-lists holds:
-
- LOCF  | MFO 
-:-------------------------:|:-------------------------:
-![](/images/rating_locf_group.png)|![](/images/rating_mfo_group.png)
-
+In addition, when using the datasets with imputations, but the same behavior of countries and top-lists holds, except in the case where Editor Choice was removed:
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
@@ -386,7 +389,7 @@ For top-lists, we noticed different behavior between tops, as the following figu
 
 It can be observed that the Editor choice have a higher number of installs, followed by Top free and, finally, Top selling. This means, apps beloging to the Editor choice list have more number of installs with respect to apps belonging to Top free or Top selling.
 
-Similarly, datasets with imputations present the same behavior:
+Similarly, datasets with imputations present the same behavior, with the exception of the dataset where Editor Choice was removed:
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
@@ -404,10 +407,6 @@ Finally, when grouping by country and top-lists, we saw that the predominant beh
 We would expect that Colombia and Brazil had similar behavior, since both countries belong to South America. However, it is also to note that Colombia and USA again have a similar behavior between them, as well as Germany and Brazil. This could be because Colombia and USA belong to the same content rating classification.
 
 On the other hand, when looking at the datasets with imputations, almost all the groups had the same behavior as the dataset without imputations, with the exception of Colombia and Editor Choice:
-
- LOCF  | MFO 
-:-------------------------:|:-------------------------:
-![](/images/num_installs_locf_group.png)|![](/images/num_installs_mfo_group.png)
 
  LOCF  | MFO 
 :-------------------------:|:-------------------------:
