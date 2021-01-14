@@ -191,8 +191,10 @@ Android Version holds the same behavior, as the general dataset, for Top free an
 In the same way, datasets with imputations keep the same prevalent android version for Top free and Top selling, and _Varies with device_ for Editor choice:
 
  - Android Version, grouped by top, for dataset with LOCF imputation, without Colombia: [Android Version LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_android_version_top_co.html)
+ 
+- Android Version, grouped by top, for dataset with LOCF imputation, without Editors' Choice: [Android Version LOCF](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/LOCF_android_version_top_ec.html)
 
-- Android Version, grouped by top, for dataset with MFO imputation, without Editors' Choice: [Android Version MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_android_version_top_ec.html)
+- Android Version, grouped by top, for dataset with MFO imputation: [Android Version MFO](https://htmlpreview.github.io/?https://github.com/cremedelacremetop/cremedelacreme/blob/gh-pages/htmls/MFO_android_version_top.html)
 
 ##### Country and Top-lists
 
