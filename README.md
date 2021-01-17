@@ -645,7 +645,7 @@ The following images illustrates the _EST and TBSE_ distributions:
 :-------------------------:|:-------------------------:
 ![](/images/country_event_LOCF.png) |![](/images/country_event_MFO.png)
 
-Regarding the differences we did found a diffeence between each pair od distribution, hoever all of them where negligibe. These results are the same for not imputed and imputed data.
+Regarding the differences we did found a diffeence between each pair od distribution, however all of them where negligibe. These results are the same for not imputed and imputed data.
 
 ##### Top-Lists
 When analysing EST and TBSE events by top-list, we found that Editors' choice is a distribution that behaves way different than the other two. This behaviour was the same across the three approaches (imputed data). 
